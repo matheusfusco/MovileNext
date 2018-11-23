@@ -122,10 +122,7 @@ class AddEditMovieViewController: UIViewController {
         movie.trackId = Int32(movieID ?? Int(Date().timeIntervalSince1970))
         movie.imgSearchPosterURL = posterURL ?? "" //caso tenha adicionado o filme na mão
         movie.trailerURL = trailerURL ?? "" //caso tenha adicionado o filme na mão
-        if smallImage != nil {
-            movie.poster = smallImage
-        }
-        else if ivPoster.image != nil {
+        if ivPoster.image != nil {
             movie.poster = ivPoster.image
         }
         do {
