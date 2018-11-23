@@ -13,10 +13,11 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let appDefaults: [String: Any] = ["color": "Clean",
+                                          "autoplay": true]
+        UserDefaults.standard.register(defaults: appDefaults)
         return true
     }
 

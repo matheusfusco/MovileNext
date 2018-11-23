@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Cartography (3.1.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+  - SwiftGen (6.0.2)
+  - SwiftLint (0.27.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cartography
+  - RxCocoa
+  - RxSwift
+  - SwiftGen
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Cartography
+    - RxCocoa
+    - RxSwift
+    - SwiftGen
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+
+PODFILE CHECKSUM: f5564f971de3be50ffec0063afd5497481c304ad
+
+COCOAPODS: 1.5.3
