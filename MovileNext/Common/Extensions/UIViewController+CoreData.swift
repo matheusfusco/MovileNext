@@ -12,7 +12,6 @@ import UIKit
 
 enum ContextSaveType {
     case saved
-    case alreadyExists
     case errorSaving
     case errorRetrievingData
 }
@@ -23,6 +22,53 @@ extension UIViewController {
     }
     var context: NSManagedObjectContext {
         return appDelegate.persistentContainer.viewContext
+    }
+    
+    func checkIfCategoryExists(_ categoryName: String) -> Bool {
+        let fetchRequest: NSFetchRequest<Category> = Category.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        do {
+            let categories = try context.fetch(fetchRequest)
+            if categories.contains(where: { $0.name == categoryName }) {
+                return true
+            } else {
+                return false
+            }
+        } catch {
+            return false
+        }
+    }
+    
+    func checkIfMovieExists(_ movieID: Int) -> Bool {
+        let fetchRequest: NSFetchRequest<Movie> = Movie.fetchRequest()
+        do {
+            let movies = try context.fetch(fetchRequest)
+            if movies.contains(where: { $0.trackId == movieID }) {
+                return true
+            } else {
+                return false
+            }
+        } catch {
+            return false
+        }
+    }
+    
+    func saveCategory(_ category: Category) {
+        do {
+            try self.context.save()
+        }
+        catch {
+            showAlert(message: Localization.errorSavingCategory)
+        }
+    }
+    
+    func saveMovie(_ movie: Movie) {
+        do {
+            try context.save()
+        } catch {
+            print(Localization.errorSavingMovie)
+        }
     }
     
 //    func saveCategory(_ categoryName: String, completion: @escaping(ContextSaveType) -> Void) {

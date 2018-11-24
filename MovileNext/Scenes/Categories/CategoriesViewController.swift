@@ -44,15 +44,15 @@ class CategoriesViewController: UIViewController {
         do {
             try fetchedResultController.performFetch()
         } catch {
-            showAlert(message: "Erro ao carregar as categorias!")
+            showAlert(message: Localization.errorLoadingCategories)
         }
     }
     
     func showAlert(type: CategoryType, category: Category?) {
-        let title = (type == .add) ? "Adicionar" : "Atualizar"
-        let alert = UIAlertController(title: "\(title) Categoria", message: nil, preferredStyle: .alert)
+        let title = (type == .add) ? Localization.addCategory : Localization.updateCategory
+        let alert = UIAlertController(title: "\(title) \(Localization.category)", message: nil, preferredStyle: .alert)
         alert.addTextField { (textField: UITextField) in
-            textField.placeholder = "Nome da categoria"
+            textField.placeholder = Localization.categoryName
             if let name = category?.name {
                 textField.text = name
             }
@@ -64,11 +64,11 @@ class CategoriesViewController: UIViewController {
                 try self.context.save()
                 self.loadCategories()
             } catch {
-                self.showAlert(message: "Erro ao salvar a categoria!")
+                self.showAlert(message: Localization.errorSavingCategory)
                 print(error.localizedDescription)
             }
         }))
-        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: Localization.cancelEditingCategory, style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     
@@ -100,18 +100,18 @@ extension CategoriesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteAction = UITableViewRowAction(style: .destructive, title: "Excluir") { (action: UITableViewRowAction, indexPath: IndexPath) in
+        let deleteAction = UITableViewRowAction(style: .destructive, title: Localization.deleteCategory) { (action: UITableViewRowAction, indexPath: IndexPath) in
             let category = self.fetchedResultController.object(at: indexPath)
             self.context.delete(category)
             do {
                 try self.context.save()
             }
             catch {
-                self.showAlert(message: "Erro ao excluir categoria!")
+                self.showAlert(message: Localization.errorDeletingCategory)
             }
         }
         
-        let editAction = UITableViewRowAction(style: .normal, title: "Editar") { (action: UITableViewRowAction, indexPath: IndexPath) in
+        let editAction = UITableViewRowAction(style: .normal, title: Localization.editCategory) { (action: UITableViewRowAction, indexPath: IndexPath) in
             let category = self.fetchedResultController.object(at: indexPath)
             tableView.setEditing(false, animated: true)
             self.showAlert(type: .edit, category: category)

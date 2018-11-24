@@ -602,6 +602,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cadastro de Filmes" id="N7S-cN-gt0"/>
                     <connections>
+                        <outlet property="btAddCategory" destination="mWk-Lc-pQf" id="2Jr-st-VwE"/>
                         <outlet property="btAddEdit" destination="YLD-kK-iNh" id="FXh-iY-S61"/>
                         <outlet property="btAddPoster" destination="CCV-6v-YrR" id="Nmo-Qz-ZVR"/>
                         <outlet property="btSearchMovie" destination="bnk-fd-gA9" id="hny-QG-jIw"/>
@@ -625,18 +626,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bog-cd-Ao8">
-                                <rect key="frame" x="311" y="14" width="48" height="30"/>
-                                <state key="normal" title="Fechar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bog-cd-Ao8">
+                                <rect key="frame" x="16" y="14" width="33" height="33"/>
+                                <state key="normal" image="close">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="hTd-5o-Q4E">
-                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="116" estimatedRowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-Tk-Ule">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="564"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="98I-Xi-q2C">
                                     <rect key="frame" x="0.0" y="144" width="375" height="0.0"/>
@@ -687,11 +688,11 @@
                             <constraint firstItem="hTd-5o-Q4E" firstAttribute="leading" secondItem="N1S-TX-dER" secondAttribute="leading" id="07s-6p-gaE"/>
                             <constraint firstItem="N1S-TX-dER" firstAttribute="trailing" secondItem="Zao-Tk-Ule" secondAttribute="trailing" id="08L-DN-Amj"/>
                             <constraint firstItem="hTd-5o-Q4E" firstAttribute="top" secondItem="bog-cd-Ao8" secondAttribute="bottom" id="6Je-Ps-txi"/>
-                            <constraint firstItem="N1S-TX-dER" firstAttribute="trailing" secondItem="bog-cd-Ao8" secondAttribute="trailing" constant="16" id="BXo-6P-ffY"/>
                             <constraint firstItem="N1S-TX-dER" firstAttribute="top" secondItem="bog-cd-Ao8" secondAttribute="top" constant="6" id="FUB-Tt-dH1"/>
                             <constraint firstItem="Zao-Tk-Ule" firstAttribute="top" secondItem="hTd-5o-Q4E" secondAttribute="bottom" id="K5F-QZ-m0O"/>
                             <constraint firstItem="N1S-TX-dER" firstAttribute="bottom" secondItem="Zao-Tk-Ule" secondAttribute="bottom" id="eUg-Z8-pVj"/>
                             <constraint firstItem="N1S-TX-dER" firstAttribute="trailing" secondItem="hTd-5o-Q4E" secondAttribute="trailing" id="lYV-iU-Ycb"/>
+                            <constraint firstItem="bog-cd-Ao8" firstAttribute="leading" secondItem="N1S-TX-dER" secondAttribute="leading" constant="16" id="mym-0k-Gvl"/>
                             <constraint firstItem="Zao-Tk-Ule" firstAttribute="leading" secondItem="N1S-TX-dER" secondAttribute="leading" id="o5J-G1-B4O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N1S-TX-dER"/>

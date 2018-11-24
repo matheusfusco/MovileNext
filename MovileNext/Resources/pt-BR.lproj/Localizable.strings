@@ -6,7 +6,11 @@
   Copyright © 2018 Matheus. All rights reserved.
 */
 
+//MARK: - MOVIE LIST VIEW CONTROLLER
+"homeTitle" = "Filmes";
+
 //MARK: - CATEGORY VIEW CONTROLLER
+"category" = "Categoria";
 "errorLoadingCategories" = "Erro ao carregar as categorias!";
 "addCategory" = "Adicionar";
 "updateCategory" = "Atualizar";
@@ -16,3 +20,24 @@
 "deleteCategory" = "Excluir";
 "errorDeletingCategory" = "Erro ao excluir categoria!";
 "editCategory" = "Editar";
+"categoryName" = "Nome da categoria";
+
+
+//MARK: - MOVIES LIST VIEW CONTROLLER
+"errorLoadingMovie" = "Não foi possível carregar os filmes!";
+"errorDeletingMovie" = "Erro ao excluir o filme!";
+
+
+//MARK: - ADD EDIT MOVIE VIEW CONTROLLER
+"selectPoster" = "Selecionar poster";
+"selectPosterFrom" = "De onde você quer escolher o poster?";
+"camera" = "Câmera";
+"photoLibrary" = "Biblioteca de fotos";
+"photoAlbum" = "Álbum de fotos";
+"cancelSelectingPoster" = "Cancelar";
+"categoryDefault" = "Categorias";
+"errorFillAllMovieData" = "Favor preencher todos os dados!";
+"updateMovieBtnTitle" = "Atualizar";
+"errorSavingMovie" = "Erro ao salvar o filme!";
+"movieAlreadyExists" = "Esse filme já foi adicionado anteriormente!";
+"updateMovieBtnTitle" = "Atualizar";

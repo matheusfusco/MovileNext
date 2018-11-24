@@ -35,7 +35,7 @@ class MovieTableViewCell: UITableViewCell {
         if let image = movie.poster as? UIImage {
             ivPoster.image = image
         } else {
-            ivPoster.image = UIImage(named: "movies")
+            ivPoster.image = UIImage(asset: ImgAssets.movies)
         }
     }
 
