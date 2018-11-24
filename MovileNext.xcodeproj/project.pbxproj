@@ -17,8 +17,8 @@
 		5E3FB0CB21A625A200504170 /* SearchMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FB0CA21A625A200504170 /* SearchMovieTableViewCell.swift */; };
 		5E3FB0CD21A6445800504170 /* AddEditMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3FB0CC21A6445800504170 /* AddEditMovieViewController.swift */; };
 		5E6D856521A8740E007FDC70 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D856421A8740E007FDC70 /* Int.swift */; };
-		5E6D856821A8CF54007FDC70 /* Localizable-enUS.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D856A21A8CF54007FDC70 /* Localizable-enUS.strings */; };
-		5E6D856D21A8CF76007FDC70 /* Localizable-ptBR.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D856F21A8CF76007FDC70 /* Localizable-ptBR.strings */; };
+		5E6D858C21A8E036007FDC70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D858E21A8E036007FDC70 /* Localizable.strings */; };
+		5E6D859321A8E094007FDC70 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859221A8E094007FDC70 /* Strings.swift */; };
 		5E74C65F21A6C281009612B5 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C65E21A6C281009612B5 /* CategoriesViewController.swift */; };
 		5E74C66121A6CFC0009612B5 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C66021A6CFC0009612B5 /* UIViewController+Alert.swift */; };
 		5E90C24321A4669900CF2A7D /* Descricao-projeto.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5E90C24221A4669900CF2A7D /* Descricao-projeto.rtf */; };
@@ -69,8 +69,9 @@
 		5E3FB0CC21A6445800504170 /* AddEditMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditMovieViewController.swift; sourceTree = "<group>"; };
 		5E4E23ADA4FA516253230F27 /* Pods_MovileNextTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovileNextTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6D856421A8740E007FDC70 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		5E6D856921A8CF54007FDC70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Localizable-enUS.strings"; sourceTree = "<group>"; };
-		5E6D856E21A8CF76007FDC70 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable-ptBR.strings"; sourceTree = "<group>"; };
+		5E6D858D21A8E036007FDC70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E6D858F21A8E039007FDC70 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5E6D859221A8E094007FDC70 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		5E74C65E21A6C281009612B5 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		5E74C66021A6CFC0009612B5 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		5E90C24221A4669900CF2A7D /* Descricao-projeto.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Descricao-projeto.rtf"; sourceTree = "<group>"; };
@@ -136,6 +137,30 @@
 			path = SearchMovies;
 			sourceTree = "<group>";
 		};
+		5E6D858921A8E00E007FDC70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E6D858E21A8E036007FDC70 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E6D859021A8E072007FDC70 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5E6D859121A8E078007FDC70 /* Generated */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5E6D859121A8E078007FDC70 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				5E6D859221A8E094007FDC70 /* Strings.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		5E74C65D21A6C180009612B5 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +212,6 @@
 				5EB8E99B21A460F7008CAEC3 /* Assets.xcassets */,
 				5EB8E9C221A463AE008CAEC3 /* Settings.bundle */,
 				5EB8E99821A460F6008CAEC3 /* MovileNext.xcdatamodeld */,
-				5E6D856A21A8CF54007FDC70 /* Localizable-enUS.strings */,
-				5E6D856F21A8CF76007FDC70 /* Localizable-ptBR.strings */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -264,6 +287,8 @@
 		5EB8E99021A460F6008CAEC3 /* MovileNext */ = {
 			isa = PBXGroup;
 			children = (
+				5E6D859021A8E072007FDC70 /* Common */,
+				5E6D858921A8E00E007FDC70 /* Resources */,
 				5EB8E99121A460F6008CAEC3 /* AppDelegate.swift */,
 				5EA4F87B21A59064002CD0EB /* Scenes */,
 				5E9A96CD21A5CCD300A0B94B /* Entities */,
@@ -329,6 +354,7 @@
 				5EB8E98B21A460F6008CAEC3 /* Frameworks */,
 				5EB8E98C21A460F6008CAEC3 /* Resources */,
 				E7D1B9F14E950D899DD7D17D /* [CP] Embed Pods Frameworks */,
+				5E6D857E21A8D975007FDC70 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -407,6 +433,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 5EB8E98521A460F6008CAEC3;
 			productRefGroup = 5EB8E98F21A460F6008CAEC3 /* Products */;
@@ -425,10 +452,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E6D856D21A8CF76007FDC70 /* Localizable-ptBR.strings in Resources */,
 				5E90C24321A4669900CF2A7D /* Descricao-projeto.rtf in Resources */,
+				5E6D858C21A8E036007FDC70 /* Localizable.strings in Resources */,
 				5EB8E9C321A463AE008CAEC3 /* Settings.bundle in Resources */,
-				5E6D856821A8CF54007FDC70 /* Localizable-enUS.strings in Resources */,
 				5EB8E99F21A460F7008CAEC3 /* LaunchScreen.storyboard in Resources */,
 				5EB8E99C21A460F7008CAEC3 /* Assets.xcassets in Resources */,
 				5EB8E99721A460F6008CAEC3 /* Main.storyboard in Resources */,
@@ -518,6 +544,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5E6D857E21A8D975007FDC70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen strings --output $SRCROOT/MovileNext/Common/Generated/Strings.swift $SRCROOT/MovileNext/Resources/en.lproj/Localizable.strings --param enumName=Localization -t flat-swift4\n";
+		};
 		E7D1B9F14E950D899DD7D17D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,6 +608,7 @@
 				5E74C66121A6CFC0009612B5 /* UIViewController+Alert.swift in Sources */,
 				5EB8E99A21A460F6008CAEC3 /* MovileNext.xcdatamodeld in Sources */,
 				5E6D856521A8740E007FDC70 /* Int.swift in Sources */,
+				5E6D859321A8E094007FDC70 /* Strings.swift in Sources */,
 				5EB8E99221A460F6008CAEC3 /* AppDelegate.swift in Sources */,
 				5E3BEB9321A6FED5004F92E3 /* SettingsViewController.swift in Sources */,
 				5E3FB0CB21A625A200504170 /* SearchMovieTableViewCell.swift in Sources */,
@@ -604,20 +648,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5E6D856A21A8CF54007FDC70 /* Localizable-enUS.strings */ = {
+		5E6D858E21A8E036007FDC70 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5E6D856921A8CF54007FDC70 /* en */,
+				5E6D858D21A8E036007FDC70 /* en */,
+				5E6D858F21A8E039007FDC70 /* pt-BR */,
 			);
-			name = "Localizable-enUS.strings";
-			sourceTree = "<group>";
-		};
-		5E6D856F21A8CF76007FDC70 /* Localizable-ptBR.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E6D856E21A8CF76007FDC70 /* pt-BR */,
-			);
-			name = "Localizable-ptBR.strings";
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		5EB8E99521A460F6008CAEC3 /* Main.storyboard */ = {
@@ -765,6 +802,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB6VQ3ZVBQ;
 				INFOPLIST_FILE = MovileNext/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -784,6 +822,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB6VQ3ZVBQ;
 				INFOPLIST_FILE = MovileNext/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

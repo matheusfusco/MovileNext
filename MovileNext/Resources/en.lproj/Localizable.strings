@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MovileNext
+
+  Created by Matheus on 23/11/18.
+  Copyright © 2018 Matheus. All rights reserved.
+*/
+
+//MARK: - CATEGORY VIEW CONTROLLER
+"errorLoadingCategories" = "Error to load categories!";
+"addCategory" = "Add";
+"updateCategory" = "Update";
+"placeholderCategory" = "Category name";
+"errorSavingCategory" = "Error to save category!";
+"cancelEditingCategory" = "Cancel";
+"deleteCategory" = "Delete";
+"errorDeletingCategory" = "Error to delete category!";
+"editCategory" = "Edit";
