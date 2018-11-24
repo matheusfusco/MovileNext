@@ -19,6 +19,7 @@ struct MovieFromAPI: Codable {
     var trackName: String = ""
     var longDescription: String = ""
     var primaryGenreName: String = ""
-    var artworkUrl100: String = ""
+    var artworkUrl100: String = "" //poster
     var previewUrl: String = "" //trailer
+    var trackTimeMillis: Int = 0
 }

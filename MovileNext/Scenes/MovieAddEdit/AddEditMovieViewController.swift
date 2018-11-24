@@ -167,6 +167,7 @@ class AddEditMovieViewController: UIViewController {
         self.posterURL = movie.artworkUrl100
         self.trailerURL = movie.previewUrl
         self.ivPoster.imageFromURL(movie.artworkUrl100)
+        tfDuration.text = movie.trackTimeMillis.timeFromMiliseconds()
     }
 }
 

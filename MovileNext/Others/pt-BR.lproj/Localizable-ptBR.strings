@@ -1,0 +1,19 @@
+/* 
+  Localizable-ptBR.strings
+  MovileNext
+
+  Created by Matheus on 23/11/18.
+  Copyright © 2018 Matheus. All rights reserved.
+*/
+
+
+//MARK: - CATEGORY VIEW CONTROLLER
+"errorLoadingCategories" = "Erro ao carregar as categorias!";
+"addCategory" = "Adicionar";
+"updateCategory" = "Atualizar";
+"placeholderCategory" = "Nome da categoria";
+"errorSavingCategory" = "Erro ao salvar a categoria!";
+"cancelEditingCategory" = "Cancelar";
+"deleteCategory" = "Excluir";
+"errorDeletingCategory" = "Erro ao excluir categoria!";
+"editCategory" = "Editar";

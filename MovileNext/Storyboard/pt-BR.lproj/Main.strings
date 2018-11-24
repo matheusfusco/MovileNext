@@ -1,0 +1,102 @@
+
+/* Class = "UILabel"; text = "Duração"; ObjectID = "2l8-Ai-Bpk"; */
+"2l8-Ai-Bpk.text" = "Duração";
+
+/* Class = "UILabel"; text = "⭐️ Nota"; ObjectID = "3ZM-2s-elJ"; */
+"3ZM-2s-elJ.text" = "⭐️ Nota";
+
+/* Class = "UILabel"; text = "Título"; ObjectID = "8Sp-W1-uZa"; */
+"8Sp-W1-uZa.text" = "Título";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "9KT-Jb-Qvl"; */
+"9KT-Jb-Qvl.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "  Poster"; ObjectID = "CCV-6v-YrR"; */
+"CCV-6v-YrR.normalTitle" = "  Poster";
+
+/* Class = "UITextField"; placeholder = "Título"; ObjectID = "EKh-n0-yU4"; */
+"EKh-n0-yU4.placeholder" = "Título";
+
+/* Class = "UISegmentedControl"; Eyw-Ws-V1Y.segmentTitles[0] = "Clean"; ObjectID = "Eyw-Ws-V1Y"; */
+"Eyw-Ws-V1Y.segmentTitles[0]" = "Clean";
+
+/* Class = "UISegmentedControl"; Eyw-Ws-V1Y.segmentTitles[1] = "Dark"; ObjectID = "Eyw-Ws-V1Y"; */
+"Eyw-Ws-V1Y.segmentTitles[1]" = "Dark";
+
+/* Class = "UILabel"; text = "Sinopse"; ObjectID = "Ixm-dG-701"; */
+"Ixm-dG-701.text" = "Sinopse";
+
+/* Class = "UITabBarItem"; title = "Filmes"; ObjectID = "JsI-xQ-tWT"; */
+"JsI-xQ-tWT.title" = "Filmes";
+
+/* Class = "UITextView"; text = "Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Delegadis gente finis, bibendum egestas augue arcu ut est. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Quem num gosta di mim que vai caçá sua turmis!"; ObjectID = "MmI-ha-YFK"; */
+"MmI-ha-YFK.text" = "Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Delegadis gente finis, bibendum egestas augue arcu ut est. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Quem num gosta di mim que vai caçá sua turmis!";
+
+/* Class = "UINavigationItem"; title = "Cadastro de Filmes"; ObjectID = "N7S-cN-gt0"; */
+"N7S-cN-gt0.title" = "Cadastro de Filmes";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "Nmr-70-S7y"; */
+"Nmr-70-S7y.title" = "Title";
+
+/* Class = "UITabBarItem"; title = "Ajustes"; ObjectID = "Rtg-e1-yVF"; */
+"Rtg-e1-yVF.title" = "Ajustes";
+
+/* Class = "UILabel"; text = "Nenhum filme encontrado!"; ObjectID = "SHn-xJ-CgO"; */
+"SHn-xJ-CgO.text" = "Nenhum filme encontrado!";
+
+/* Class = "UILabel"; text = "Sinopse"; ObjectID = "T7n-GX-itU"; */
+"T7n-GX-itU.text" = "Sinopse";
+
+/* Class = "UINavigationItem"; title = "Categorias"; ObjectID = "TWo-V5-mVD"; */
+"TWo-V5-mVD.title" = "Categorias";
+
+/* Class = "UILabel"; text = "Tocar filmes automaticamente:"; ObjectID = "WMw-es-QAD"; */
+"WMw-es-QAD.text" = "Tocar filmes automaticamente:";
+
+/* Class = "UILabel"; text = "Ainda não há nenhum filme cadastrado..."; ObjectID = "XCc-3O-wVh"; */
+"XCc-3O-wVh.text" = "Ainda não há nenhum filme cadastrado...";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar"; ObjectID = "YLD-kK-iNh"; */
+"YLD-kK-iNh.normalTitle" = "Cadastrar";
+
+/* Class = "UILabel"; text = "Summary"; ObjectID = "bB0-9e-mOU"; */
+"bB0-9e-mOU.text" = "Summary";
+
+/* Class = "UITextField"; placeholder = "Duração"; ObjectID = "bDo-ki-3MD"; */
+"bDo-ki-3MD.placeholder" = "Duração";
+
+/* Class = "UIButton"; normalTitle = "   Buscar"; ObjectID = "bnk-fd-gA9"; */
+"bnk-fd-gA9.normalTitle" = "   Buscar";
+
+/* Class = "UIButton"; normalTitle = "Fechar"; ObjectID = "bog-cd-Ao8"; */
+"bog-cd-Ao8.normalTitle" = "Fechar";
+
+/* Class = "UILabel"; text = "Rating"; ObjectID = "ciT-nw-3Yq"; */
+"ciT-nw-3Yq.text" = "Rating";
+
+/* Class = "UITextField"; placeholder = "Nota 0~5 ⭐️"; ObjectID = "egH-YJ-20N"; */
+"egH-YJ-20N.placeholder" = "Nota 0~5 ⭐️";
+
+/* Class = "UILabel"; text = "Categorias"; ObjectID = "klR-55-xHs"; */
+"klR-55-xHs.text" = "Categorias";
+
+/* Class = "UILabel"; text = "Esquema de cores"; ObjectID = "koI-KT-Uc4"; */
+"koI-KT-Uc4.text" = "Esquema de cores";
+
+/* Class = "UINavigationItem"; title = "Filmes"; ObjectID = "uSm-pD-6J3"; */
+"uSm-pD-6J3.title" = "Filmes";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uud-nT-yKV"; */
+"uud-nT-yKV.text" = "Title";
+
+/* Class = "UILabel"; text = "Gênero"; ObjectID = "wC9-ya-crK"; */
+"wC9-ya-crK.text" = "Gênero";
+
+/* Class = "UILabel"; text = "Nenhuma categoria cadastrada!"; ObjectID = "xAa-eu-62E"; */
+"xAa-eu-62E.text" = "Nenhuma categoria cadastrada!";
+
+/* Class = "UIViewController"; title = "Ajustes"; ObjectID = "xlz-a2-Nmn"; */
+"xlz-a2-Nmn.title" = "Ajustes";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "zDS-Om-yYW"; */
+"zDS-Om-yYW.text" = "Title";

@@ -10,10 +10,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class APIController {
+final class APIController {
     static var shared = APIController()
     
-    func urlString(searchText: String) -> URL {
+    private func urlString(searchText: String) -> URL {
         //evitar espaços
         let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         
@@ -24,7 +24,7 @@ class APIController {
         return url
     }
     
-    func parse(data: Data) -> [MovieFromAPI] {
+    private func parse(data: Data) -> [MovieFromAPI] {
         do {
             let deconder = JSONDecoder()
             let result = try deconder.decode(MoviesResult.self, from: data)
