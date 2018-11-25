@@ -163,7 +163,7 @@ class AddEditMovieViewController: UIViewController {
     
     private func updateUI(with movie: MovieFromAPI) {
         tfTitle.text = movie.trackName
-        lbCategories.text = movie.primaryGenreName
+//        lbCategories.text = movie.primaryGenreName
         tvSinopse.text = movie.longDescription
         self.movieID = movie.trackId
         self.posterURL = movie.artworkUrl100

@@ -326,6 +326,7 @@
                     <connections>
                         <segue destination="pl5-gb-ICq" kind="relationship" relationship="viewControllers" id="WhM-c6-GTq"/>
                         <segue destination="xlz-a2-Nmn" kind="relationship" relationship="viewControllers" id="ms3-xY-P2V"/>
+                        <segue destination="Wj9-dG-sHl" kind="relationship" relationship="viewControllers" id="P0s-ka-Frb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3c6-IR-U4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -405,6 +406,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jx-9a-rdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-399.375" y="658.09859154929575"/>
+        </scene>
+        <!--Sobre-->
+        <scene sceneID="a4y-iY-au9">
+            <objects>
+                <viewController id="Wj9-dG-sHl" customClass="AboutViewController" customModule="MovileNext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4LO-U8-PKh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TDa-af-tcM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="about" id="7ln-bp-S7V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVp-6r-dQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="658"/>
         </scene>
         <!--Cadastro de Filmes-->
         <scene sceneID="412-o2-MnX">
@@ -864,6 +881,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="33" height="33"/>
         <image name="category" width="33" height="33"/>
         <image name="close" width="33" height="33"/>
         <image name="gradient" width="320" height="66"/>

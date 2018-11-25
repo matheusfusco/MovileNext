@@ -22,6 +22,9 @@
 		5E6D859621A8EEDC007FDC70 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859521A8EEDC007FDC70 /* Images.swift */; };
 		5E6D859821A9FC49007FDC70 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859721A9FC49007FDC70 /* AppTheme.swift */; };
 		5E6D859A21AA00B8007FDC70 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859921AA00B8007FDC70 /* BaseViewController.swift */; };
+		5E6D859C21AB08E6007FDC70 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859B21AB08E6007FDC70 /* AboutViewController.swift */; };
+		5E6D859E21AB0916007FDC70 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859D21AB0916007FDC70 /* AboutView.swift */; };
+		5E6D85A221AB1C4A007FDC70 /* SwiftLint Rules.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D85A121AB1C4A007FDC70 /* SwiftLint Rules.rtf */; };
 		5E74C65F21A6C281009612B5 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C65E21A6C281009612B5 /* CategoriesViewController.swift */; };
 		5E74C66121A6CFC0009612B5 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C66021A6CFC0009612B5 /* UIViewController+Alert.swift */; };
 		5E90C24321A4669900CF2A7D /* Descricao-projeto.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5E90C24221A4669900CF2A7D /* Descricao-projeto.rtf */; };
@@ -78,6 +81,9 @@
 		5E6D859521A8EEDC007FDC70 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		5E6D859721A9FC49007FDC70 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		5E6D859921AA00B8007FDC70 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5E6D859B21AB08E6007FDC70 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5E6D859D21AB0916007FDC70 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		5E6D85A121AB1C4A007FDC70 /* SwiftLint Rules.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "SwiftLint Rules.rtf"; sourceTree = "<group>"; };
 		5E74C65E21A6C281009612B5 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		5E74C66021A6CFC0009612B5 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		5E90C24221A4669900CF2A7D /* Descricao-projeto.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Descricao-projeto.rtf"; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				5EB8E9C221A463AE008CAEC3 /* Settings.bundle */,
 				5EB8E99821A460F6008CAEC3 /* MovileNext.xcdatamodeld */,
 				5E6D858E21A8E036007FDC70 /* Localizable.strings */,
+				5E6D85A121AB1C4A007FDC70 /* SwiftLint Rules.rtf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -174,6 +181,15 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		5E6D859F21AB15F0007FDC70 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				5E6D859B21AB08E6007FDC70 /* AboutViewController.swift */,
+				5E6D859D21AB0916007FDC70 /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		5E74C65D21A6C180009612B5 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,12 +198,12 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		5E9A96CD21A5CCD300A0B94B /* Entities */ = {
+		5E9A96CD21A5CCD300A0B94B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				5E9A96CE21A5CCDD00A0B94B /* MovieFromAPI.swift */,
 			);
-			path = Entities;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5E9A96D021A620F000A0B94B /* Network */ = {
@@ -218,7 +234,7 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		5EA4F87B21A59064002CD0EB /* Scenes */ = {
+		5EA4F87B21A59064002CD0EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				5E74C65D21A6C180009612B5 /* Categories */,
@@ -227,8 +243,9 @@
 				5EA4F87F21A59432002CD0EB /* MovieAddEdit */,
 				5EA4F88021A59469002CD0EB /* MovieDetail */,
 				5EA4F88121A59488002CD0EB /* Settings */,
+				5E6D859F21AB15F0007FDC70 /* About */,
 			);
-			path = Scenes;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		5EA4F87E21A593B7002CD0EB /* MoviesList */ = {
@@ -290,8 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				5EB8E99121A460F6008CAEC3 /* AppDelegate.swift */,
-				5EA4F87B21A59064002CD0EB /* Scenes */,
-				5E9A96CD21A5CCD300A0B94B /* Entities */,
+				5EA4F87B21A59064002CD0EB /* ViewControllers */,
+				5E9A96CD21A5CCD300A0B94B /* Models */,
 				5E9A96D021A620F000A0B94B /* Network */,
 				5EA4F87921A5900C002CD0EB /* Storyboard */,
 				5E6D859021A8E072007FDC70 /* Common */,
@@ -350,12 +367,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB8E9B921A460F8008CAEC3 /* Build configuration list for PBXNativeTarget "MovileNext" */;
 			buildPhases = (
+				5E6D857E21A8D975007FDC70 /* SwiftGen */,
+				5E6D85A021AB18C8007FDC70 /* SwiftLint */,
 				01704B4AB386FB7E01758E3F /* [CP] Check Pods Manifest.lock */,
 				5EB8E98A21A460F6008CAEC3 /* Sources */,
 				5EB8E98B21A460F6008CAEC3 /* Frameworks */,
 				5EB8E98C21A460F6008CAEC3 /* Resources */,
 				E7D1B9F14E950D899DD7D17D /* [CP] Embed Pods Frameworks */,
-				5E6D857E21A8D975007FDC70 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -454,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E90C24321A4669900CF2A7D /* Descricao-projeto.rtf in Resources */,
+				5E6D85A221AB1C4A007FDC70 /* SwiftLint Rules.rtf in Resources */,
 				5E6D858C21A8E036007FDC70 /* Localizable.strings in Resources */,
 				5EB8E9C321A463AE008CAEC3 /* Settings.bundle in Resources */,
 				5EB8E99F21A460F7008CAEC3 /* LaunchScreen.storyboard in Resources */,
@@ -545,7 +564,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5E6D857E21A8D975007FDC70 /* ShellScript */ = {
+		5E6D857E21A8D975007FDC70 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -554,6 +573,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftGen;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -561,6 +581,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen strings --output $SRCROOT/MovileNext/Common/Generated/Strings.swift $SRCROOT/MovileNext/Resources/en.lproj/Localizable.strings --param enumName=Localization -t flat-swift4\n\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets --output $SRCROOT/MovileNext/Common/Generated/Images.swift $SRCROOT/MovileNext/Resources/Assets.xcassets --param enumName=ImgAssets -t swift3\n";
+		};
+		5E6D85A021AB18C8007FDC70 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		E7D1B9F14E950D899DD7D17D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -599,7 +637,9 @@
 			files = (
 				5E2C39A521A81E2300A03C75 /* ImageView.swift in Sources */,
 				5EB8E99421A460F6008CAEC3 /* SearchMovieViewController.swift in Sources */,
+				5E6D859E21AB0916007FDC70 /* AboutView.swift in Sources */,
 				5E6D859821A9FC49007FDC70 /* AppTheme.swift in Sources */,
+				5E6D859C21AB08E6007FDC70 /* AboutViewController.swift in Sources */,
 				5EA4F87D21A59094002CD0EB /* UIViewController+CoreData.swift in Sources */,
 				5E3BEB9521A6FFFC004F92E3 /* MovieTableViewCell.swift in Sources */,
 				5E74C65F21A6C281009612B5 /* CategoriesViewController.swift in Sources */,
