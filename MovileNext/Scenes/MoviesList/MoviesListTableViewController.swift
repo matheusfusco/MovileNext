@@ -41,7 +41,7 @@ class MoviesListTableViewController: UITableViewController {
         do {
             try fetchedResultController.performFetch()
         } catch {
-            self.showAlert(message: "Não foi possível carregar os filmes!")
+            self.showAlert(message: Localization.errorLoadingMovie)
         }
     }
     
@@ -70,7 +70,7 @@ class MoviesListTableViewController: UITableViewController {
             do {
                 try context.save()
             } catch {
-                showAlert(message: "Erro ao excluir o filme!")
+                showAlert(message: Localization.errorDeletingMovie)
             }
         }
     }

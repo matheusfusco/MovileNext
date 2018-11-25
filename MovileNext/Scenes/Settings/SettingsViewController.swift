@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: BaseViewController {
 
     @IBOutlet weak var scColors: UISegmentedControl!
     @IBOutlet weak var swAutoplay: UISwitch!
@@ -24,7 +24,8 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func changeColor(_ sender: UISegmentedControl) {
-        UserDefaults.standard.set(scColors.selectedSegmentIndex, forKey: "color")
+        ThemeManager.applyTheme(Theme(rawValue: scColors.selectedSegmentIndex)!)
+        changeTheme()
     }
     
     @IBAction func changeAutoplay(_ sender: UISwitch) {

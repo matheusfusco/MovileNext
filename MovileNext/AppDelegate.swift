@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let appDefaults: [String: Any] = ["color": "Clean",
                                           "autoplay": true]
         UserDefaults.standard.register(defaults: appDefaults)
+        
+        ThemeManager.applyTheme(Theme(rawValue: UserDefaults.standard.integer(forKey: "color"))!)
         return true
     }
 

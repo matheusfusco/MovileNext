@@ -20,6 +20,8 @@
 		5E6D858C21A8E036007FDC70 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D858E21A8E036007FDC70 /* Localizable.strings */; };
 		5E6D859321A8E094007FDC70 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859221A8E094007FDC70 /* Strings.swift */; };
 		5E6D859621A8EEDC007FDC70 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859521A8EEDC007FDC70 /* Images.swift */; };
+		5E6D859821A9FC49007FDC70 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859721A9FC49007FDC70 /* AppTheme.swift */; };
+		5E6D859A21AA00B8007FDC70 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D859921AA00B8007FDC70 /* BaseViewController.swift */; };
 		5E74C65F21A6C281009612B5 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C65E21A6C281009612B5 /* CategoriesViewController.swift */; };
 		5E74C66121A6CFC0009612B5 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E74C66021A6CFC0009612B5 /* UIViewController+Alert.swift */; };
 		5E90C24321A4669900CF2A7D /* Descricao-projeto.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5E90C24221A4669900CF2A7D /* Descricao-projeto.rtf */; };
@@ -74,6 +76,8 @@
 		5E6D858F21A8E039007FDC70 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5E6D859221A8E094007FDC70 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		5E6D859521A8EEDC007FDC70 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		5E6D859721A9FC49007FDC70 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		5E6D859921AA00B8007FDC70 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5E74C65E21A6C281009612B5 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		5E74C66021A6CFC0009612B5 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		5E90C24221A4669900CF2A7D /* Descricao-projeto.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Descricao-projeto.rtf"; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 		5E6D859021A8E072007FDC70 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5E6D859921AA00B8007FDC70 /* BaseViewController.swift */,
 				5EA4F87821A59004002CD0EB /* Extensions */,
 				5E6D859121A8E078007FDC70 /* Generated */,
 			);
@@ -292,6 +297,7 @@
 				5E6D859021A8E072007FDC70 /* Common */,
 				5E6D858921A8E00E007FDC70 /* Resources */,
 				5EB8E9A021A460F7008CAEC3 /* Info.plist */,
+				5E6D859721A9FC49007FDC70 /* AppTheme.swift */,
 			);
 			path = MovileNext;
 			sourceTree = "<group>";
@@ -593,6 +599,7 @@
 			files = (
 				5E2C39A521A81E2300A03C75 /* ImageView.swift in Sources */,
 				5EB8E99421A460F6008CAEC3 /* SearchMovieViewController.swift in Sources */,
+				5E6D859821A9FC49007FDC70 /* AppTheme.swift in Sources */,
 				5EA4F87D21A59094002CD0EB /* UIViewController+CoreData.swift in Sources */,
 				5E3BEB9521A6FFFC004F92E3 /* MovieTableViewCell.swift in Sources */,
 				5E74C65F21A6C281009612B5 /* CategoriesViewController.swift in Sources */,
@@ -604,6 +611,7 @@
 				5EB8E99A21A460F6008CAEC3 /* MovileNext.xcdatamodeld in Sources */,
 				5E6D856521A8740E007FDC70 /* Int.swift in Sources */,
 				5E6D859321A8E094007FDC70 /* Strings.swift in Sources */,
+				5E6D859A21AA00B8007FDC70 /* BaseViewController.swift in Sources */,
 				5E6D859621A8EEDC007FDC70 /* Images.swift in Sources */,
 				5EB8E99221A460F6008CAEC3 /* AppDelegate.swift in Sources */,
 				5E3BEB9321A6FED5004F92E3 /* SettingsViewController.swift in Sources */,

@@ -33,6 +33,7 @@ class AddEditMovieViewController: UIViewController {
     @IBOutlet weak var lbCategories: UILabel!
     @IBOutlet weak var ivPoster: UIImageView!
     
+    @IBOutlet weak var btAddCategory: UIButton!
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,26 +60,26 @@ class AddEditMovieViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func addPoster(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Selecionar poster", message: "De onde você quer escolher o poster?", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: Localization.selectPoster, message: Localization.selectPosterFrom, preferredStyle: .actionSheet)
     
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let cameraAction = UIAlertAction(title: "Câmera", style: .default, handler: { (action: UIAlertAction) in
+            let cameraAction = UIAlertAction(title: Localization.camera, style: .default, handler: { (action: UIAlertAction) in
                 self.selectPicture(sourceType: .camera)
             })
             alert.addAction(cameraAction)
         }
     
-        let libraryAction = UIAlertAction(title: "Biblioteca de fotos", style: .default) { (action: UIAlertAction) in
+        let libraryAction = UIAlertAction(title: Localization.photoLibrary, style: .default) { (action: UIAlertAction) in
             self.selectPicture(sourceType: .photoLibrary)
         }
         alert.addAction(libraryAction)
         
-        let photosAction = UIAlertAction(title: "Álbum de fotos", style: .default) { (action: UIAlertAction) in
+        let photosAction = UIAlertAction(title: Localization.photoAlbum, style: .default) { (action: UIAlertAction) in
             self.selectPicture(sourceType: .savedPhotosAlbum)
         }
         alert.addAction(photosAction)
         
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: Localization.cancelSelectingPoster, style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         
         present(alert, animated: true, completion: nil)
@@ -109,7 +110,7 @@ class AddEditMovieViewController: UIViewController {
     
     @IBAction func addUpdateMovie(_ sender: UIButton) {
         guard tfTitle.text != nil, tfRating.text != nil, tfDuration.text != nil, tvSinopse.text != nil, lbCategories.text != nil, lbCategories.text != "Categorias", tfTitle.text != "", tfRating.text != "", tfDuration.text != "", tvSinopse.text != "", lbCategories.text != "" else {
-            self.showAlert(message: "Favor preencher todos os dados!")
+            self.showAlert(message: Localization.errorFillAllMovieData)
             return
         }
         if movie == nil {
@@ -136,11 +137,12 @@ class AddEditMovieViewController: UIViewController {
     // MARK: - Methods
     private func setupUI() {
         if movie != nil {
+            self.title = movie.title
             tfTitle.text = movie.title
             tfRating.text = "\(movie.rating)"
             tfDuration.text = movie.duration
             tvSinopse.text = movie.summary
-            btAddEdit.setTitle("Atualizar", for: .normal)
+            btAddEdit.setTitle(Localization.updateMovieBtnTitle, for: .normal)
             if let image = movie.poster as? UIImage {
                 ivPoster.image = image
             }
