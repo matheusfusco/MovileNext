@@ -12,7 +12,7 @@ import AVKit
 
 class MovieDetailViewController: UIViewController {
 
-    //MARK: - Variables
+    // MARK: - Variables
     var movie: Movie!
     var moviePlayer: AVPlayer!
     var moviePlayerController: AVPlayerViewController!
@@ -52,8 +52,7 @@ class MovieDetailViewController: UIViewController {
         prepareVideo()
         if UserDefaults.standard.bool(forKey: "autoplay") {
             changeMovieStatus(play: true)
-        }
-        else {
+        } else {
             let oldHeight = ivPoster.frame.size.height
             ivPoster.frame.size.height = 0
             UIView.animate(withDuration: 1, delay: 0.5, options: .curveEaseInOut, animations: {
@@ -74,7 +73,7 @@ class MovieDetailViewController: UIViewController {
     
     // MARK: - Custom Methods
     func prepareVideo() {
-        if let _ = movie.trailerURL {
+        if movie.trailerURL != nil {
             moviePlayer = AVPlayer(url: URL(string: "\((movie.trailerURL)!)")!)
 
             let moviePlayerController = AVPlayerViewController()
@@ -90,8 +89,7 @@ class MovieDetailViewController: UIViewController {
         viTrailer.isHidden = false
         if play {
             moviePlayer.play()
-        }
-        else {
+        } else {
             moviePlayer.pause()
         }
     }

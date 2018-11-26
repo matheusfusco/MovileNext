@@ -13,7 +13,7 @@ import CoreData
 
 class AddEditMovieViewController: UIViewController {
 
-    //MARK: - Variables
+    // MARK: - Variables
     var movie: Movie!
     var smallImage: UIImage!
     var movieID: Int?
@@ -22,7 +22,7 @@ class AddEditMovieViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private var movieAPI = Variable<MovieFromAPI>(MovieFromAPI())
     
-    //MARK: - IBOutlets
+    // MARK: - IBOutlets
     @IBOutlet weak var tfTitle: UITextField!
     @IBOutlet weak var tfRating: UITextField!
     @IBOutlet weak var tfDuration: UITextField!
@@ -63,18 +63,18 @@ class AddEditMovieViewController: UIViewController {
         let alert = UIAlertController(title: Localization.selectPoster, message: Localization.selectPosterFrom, preferredStyle: .actionSheet)
     
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let cameraAction = UIAlertAction(title: Localization.camera, style: .default, handler: { (action: UIAlertAction) in
+            let cameraAction = UIAlertAction(title: Localization.camera, style: .default, handler: { _/*(action: UIAlertAction)*/ in
                 self.selectPicture(sourceType: .camera)
             })
             alert.addAction(cameraAction)
         }
     
-        let libraryAction = UIAlertAction(title: Localization.photoLibrary, style: .default) { (action: UIAlertAction) in
+        let libraryAction = UIAlertAction(title: Localization.photoLibrary, style: .default) { _/*(action: UIAlertAction)*/ in
             self.selectPicture(sourceType: .photoLibrary)
         }
         alert.addAction(libraryAction)
         
-        let photosAction = UIAlertAction(title: Localization.photoAlbum, style: .default) { (action: UIAlertAction) in
+        let photosAction = UIAlertAction(title: Localization.photoAlbum, style: .default) { _/*(action: UIAlertAction)*/ in
             self.selectPicture(sourceType: .savedPhotosAlbum)
         }
         alert.addAction(photosAction)
@@ -94,18 +94,18 @@ class AddEditMovieViewController: UIViewController {
     
     @IBAction func searchMovie() {
         guard let storyboard = storyboard else { return }
-        let searchMovieViewController = storyboard.instantiateViewController(withIdentifier: "SearchMovieViewController") as! SearchMovieViewController
-        
-        let selectedMovie = searchMovieViewController.selectedMovie.share()
-        
-        selectedMovie.subscribe(onNext: { [weak self] movie in
-            if let `self` = self  {
-                self.movieAPI.value = movie
-                self.updateUI(with: movie)
-            }
-        }).disposed(by: disposeBag)
-        
-        self.present(searchMovieViewController, animated: true, completion: nil)
+        if let searchMovieViewController = storyboard.instantiateViewController(withIdentifier: "SearchMovieViewController") as? SearchMovieViewController {
+            let selectedMovie = searchMovieViewController.selectedMovie.share()
+            
+            selectedMovie.subscribe(onNext: { [weak self] movie in
+                if let `self` = self {
+                    self.movieAPI.value = movie
+                    self.updateUI(with: movie)
+                }
+            }).disposed(by: disposeBag)
+            
+            self.present(searchMovieViewController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func addUpdateMovie(_ sender: UIButton) {
@@ -145,8 +145,7 @@ class AddEditMovieViewController: UIViewController {
             btAddEdit.setTitle(Localization.updateMovieBtnTitle, for: .normal)
             if let image = movie.poster as? UIImage {
                 ivPoster.image = image
-            }
-            else if let posterURL = movie.imgSearchPosterURL {
+            } else if let posterURL = movie.imgSearchPosterURL {
                 ivPoster.imageFromURL(posterURL)
             } else {
                 ivPoster.image = UIImage(named: "movies")

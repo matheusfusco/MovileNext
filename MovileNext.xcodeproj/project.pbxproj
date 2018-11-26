@@ -367,9 +367,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB8E9B921A460F8008CAEC3 /* Build configuration list for PBXNativeTarget "MovileNext" */;
 			buildPhases = (
+				01704B4AB386FB7E01758E3F /* [CP] Check Pods Manifest.lock */,
 				5E6D857E21A8D975007FDC70 /* SwiftGen */,
 				5E6D85A021AB18C8007FDC70 /* SwiftLint */,
-				01704B4AB386FB7E01758E3F /* [CP] Check Pods Manifest.lock */,
 				5EB8E98A21A460F6008CAEC3 /* Sources */,
 				5EB8E98B21A460F6008CAEC3 /* Frameworks */,
 				5EB8E98C21A460F6008CAEC3 /* Resources */,

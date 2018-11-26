@@ -1,0 +1,22 @@
+line_length:
+ - 300 # warning
+ - 400 # error
+
+force_try: warning
+force_cast: warning
+
+disabled_rules:
+  - trailing_whitespace
+  - force_unwrappingitespace
+  - type_name
+  - identifier_name
+  - large_tuple
+  - function_parameter_count
+  - type_body_length
+  - line_length
+  - shorthand_operator
+  - vertical_whitespace
+  - colon
+
+excluded:
+  - Pods/

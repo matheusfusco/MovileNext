@@ -29,8 +29,7 @@ final class APIController {
             let deconder = JSONDecoder()
             let result = try deconder.decode(MoviesResult.self, from: data)
             return result.results
-        }
-        catch {
+        } catch {
             print(error)
             return []
         }

@@ -47,15 +47,13 @@ class SearchMovieViewController: UIViewController {
             .distinctUntilChanged()
             .flatMapLatest { query -> Observable<[MovieFromAPI]> in
                 if query.isEmpty {
-//                    self.noFilmsView.isHidden = false
                     return .just([])
                 }
                 return APIController.shared.search(query)
-                    .catchError({ (error) -> Observable<[MovieFromAPI]> in
-//                        self.noFilmsView.isHidden = false
-                        return Observable.just([])
-                    })
-//                    .catchErrorJustReturn([])
+//                    .catchError({ (error) -> Observable<[MovieFromAPI]> in
+//                        return Observable.just([])
+//                    })
+                    .catchErrorJustReturn([])
             }
             .observeOn(MainScheduler.instance)
         
@@ -66,7 +64,7 @@ class SearchMovieViewController: UIViewController {
                 return false
             })
             .bind(to: tableView.rx.items(cellIdentifier: "MovieCell",
-                                         cellType: SearchMovieTableViewCell.self)) { (row, movie, cell) in
+                                         cellType: SearchMovieTableViewCell.self)) { (_/*row*/, movie, cell) in
                                             
                 cell.configure(movie: movie)
             }

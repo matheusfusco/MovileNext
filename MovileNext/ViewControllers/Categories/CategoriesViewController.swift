@@ -57,7 +57,7 @@ class CategoriesViewController: UIViewController {
                 textField.text = name
             }
         }
-        alert.addAction(UIAlertAction(title: title, style: .default, handler: { (action: UIAlertAction) in
+        alert.addAction(UIAlertAction(title: title, style: .default, handler: { _/*(action: UIAlertAction)*/ in
             let category = category ?? Category(context: self.context)
             category.name = alert.textFields?.first?.text
             do {
@@ -100,18 +100,17 @@ extension CategoriesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteAction = UITableViewRowAction(style: .destructive, title: Localization.deleteCategory) { (action: UITableViewRowAction, indexPath: IndexPath) in
+        let deleteAction = UITableViewRowAction(style: .destructive, title: Localization.deleteCategory) { ( _ /*action: UITableViewRowAction*/, indexPath: IndexPath) in
             let category = self.fetchedResultController.object(at: indexPath)
             self.context.delete(category)
             do {
                 try self.context.save()
-            }
-            catch {
+            } catch {
                 self.showAlert(message: Localization.errorDeletingCategory)
             }
         }
         
-        let editAction = UITableViewRowAction(style: .normal, title: Localization.editCategory) { (action: UITableViewRowAction, indexPath: IndexPath) in
+        let editAction = UITableViewRowAction(style: .normal, title: Localization.editCategory) { ( _ /*action: UITableViewRowAction*/, indexPath: IndexPath) in
             let category = self.fetchedResultController.object(at: indexPath)
             tableView.setEditing(false, animated: true)
             self.showAlert(type: .edit, category: category)

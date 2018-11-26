@@ -57,10 +57,12 @@ class MoviesListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as! MovieTableViewCell
-        let movie = fetchedResultController.object(at: indexPath)
-        cell.configure(movie)
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieTableViewCell {
+            let movie = fetchedResultController.object(at: indexPath)
+            cell.configure(movie)
+            return cell
+        }
+        return UITableViewCell()
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

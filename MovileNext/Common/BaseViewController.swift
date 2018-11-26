@@ -24,7 +24,7 @@ class BaseViewController: UIViewController {
     }
     
     var list: [UIView] = []
-    func listSubviewsOfView (view:UIView){
+    func listSubviewsOfView (view:UIView) {
         let subviews = view.subviews
         
         if subviews.count == 0 {
@@ -41,16 +41,14 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = theme.backgroundColor
         
         for v in list {
-            if v is UILabel {
-                (v as! UILabel).textColor = theme.titleTextColor
-            }
-            if v is UIButton {
-                (v as! UIButton).backgroundColor = theme.backgroundColor
-                (v as! UIButton).titleLabel?.textColor = theme.titleTextColor
-                (v as! UIButton).imageView?.tintColor = theme.titleTextColor
-            }
-            if v is UISegmentedControl {
-                (v as! UISegmentedControl).tintColor = theme.titleTextColor
+            if let lb = v as? UILabel {
+                lb.textColor = theme.titleTextColor
+            } else if let bt = v as? UIButton {
+                bt.backgroundColor = theme.backgroundColor
+                bt.titleLabel?.textColor = theme.titleTextColor
+                bt.imageView?.tintColor = theme.titleTextColor
+            } else if let sc = v as? UISegmentedControl {
+                sc.tintColor = theme.titleTextColor
             }
         }
     }

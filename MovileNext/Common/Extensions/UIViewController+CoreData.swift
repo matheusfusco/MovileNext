@@ -57,8 +57,7 @@ extension UIViewController {
     func saveCategory(_ category: Category) {
         do {
             try self.context.save()
-        }
-        catch {
+        } catch {
             showAlert(message: Localization.errorSavingCategory)
         }
     }

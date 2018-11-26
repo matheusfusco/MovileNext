@@ -20,6 +20,6 @@ extension Int {
         
         let hours = Int(minutes/60)
         
-        return String(format: "%0.2d:%0.2d:%0.2d",hours,tMinutes,tSeconds)
+        return String(format: "%0.2d:%0.2d:%0.2d", hours, tMinutes, tSeconds)
     }
 }
